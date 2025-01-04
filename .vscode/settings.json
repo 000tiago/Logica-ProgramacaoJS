@@ -1,4 +1,6 @@
 {
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
     // Configura os esquemas JSON para validação automática
     "json.schemas": [
         // Adicione esquemas aqui, por exemplo:
@@ -25,5 +27,14 @@
     "prettier.tabWidth": 4,
     // Ajuste o tamanho do tab para ficar maior, se necessário
     "editor.tabSize": 4,  // Aumenta o tamanho da tabulação
-    "editor.detectIndentation": false  // Impede que o VS Code mude a configuração com base no arquivo
+    "editor.detectIndentation": false,  // Impede que o VS Code mude a configuração com base no arquivo
+	"editor.formatOnSave": true, //Salvar sem ';'
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+			"editor.formatOnSave": true, // Formatar automaticamente ao salvar
+			"editor.tabSize": 4,        // Tamanho da indentação (4 espaços, pode ajustar para 2 se preferir)
+			"editor.insertSpaces": true, // Usar espaços ao invés de tabulação
+			"[typescript]": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode" // Usar o Prettier para formatação
+			}
 }
